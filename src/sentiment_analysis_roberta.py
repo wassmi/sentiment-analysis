@@ -13,7 +13,7 @@ tokenizer = AutoTokenizer.from_pretrained(MODEL)
 model = AutoModelForSequenceClassification.from_pretrained(MODEL)
 
 # Charger les données
-df = pd.read_csv('./avis.csv')
+df = pd.read_csv('path/to/your/csv/file')
 
 # Fonction pour calculer les scores de polarité avec RoBERTa en utilisant PyTorch
 def polarity_scores_roberta(text):
